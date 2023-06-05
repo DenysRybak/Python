@@ -1,0 +1,16 @@
+2023-06-05 05:42:58,011 - ERROR - Exception occurred: Not enough food available
+Traceback (most recent call last):
+  File "C:\Users\Denys\PycharmProjects\Work2Lab\Models\FoodExpection.py", line 13, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Denys\PycharmProjects\Work2Lab\Manager\AnimalHomeManager.py", line 129, in feed_animal
+    raise NotEnoughFoodException('Not enough food available')
+Models.FoodExpection.NotEnoughFoodException: Not enough food available
+2023-06-05 05:45:49,028 - ERROR - Exception occurred: Not enough food available
+Traceback (most recent call last):
+  File "C:\Users\Denys\PycharmProjects\Work2Lab\Models\FoodExpection.py", line 13, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Denys\PycharmProjects\Work2Lab\Manager\AnimalHomeManager.py", line 129, in feed_animal
+    raise NotEnoughFoodException('Not enough food available')
+Models.FoodExpection.NotEnoughFoodException: Not enough food available

@@ -1,4 +1,4 @@
-from AbstractAnimalHome import AbstractAnimalHome
+from Models.AbstractAnimalHome import AbstractAnimalHome
 
 
 class Farm(AbstractAnimalHome):
@@ -16,6 +16,7 @@ class Farm(AbstractAnimalHome):
         self.typeq = typeq
         self.money_for_farm_food = money_for_farm_food
         self.description()
+        self.favorite_food_set = {"vegetable"}
 
     # реалізація методу
     def description(self):
