@@ -1,4 +1,5 @@
 from Models.AbstractAnimalHome import AbstractAnimalHome
+from Models.FoodExpection import FoodUnavailableException, NotEnoughFoodException
 from Models.Zoo import Zoo
 from Models.Farm import Farm
 from Models.AnimalShelter import AnimalShelter
@@ -120,6 +121,14 @@ class AnimalHomeManager:
         concatenated_objects = [f"{animal_home}: {result}" for animal_home, result in zip(animal_homes, results)]
         return concatenated_objects
 
+    def feed_animal(self):
+        if not self.food_available:
+            raise FoodUnavailableException('Food is currently unavailable')
+        if self.food_quantity < 1:
+            raise NotEnoughFoodException('Not enough food available')
+
+        self.food_quantity -= 1
+        print('Animal has been fed')
 
 
 # Створємо об'єкт AnimalHomeManager і викликаємо метод main()
@@ -127,5 +136,5 @@ manager = AnimalHomeManager()
 manager.main()
 
 zoo = Zoo("Askania nova", "Lviv", 932, 71, "9 AM - 6 PM", 3400)
-
+zoo.feed_animal()
 
