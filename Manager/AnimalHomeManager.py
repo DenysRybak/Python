@@ -127,5 +127,5 @@ manager = AnimalHomeManager()
 manager.main()
 
 zoo = Zoo("Askania nova", "Lviv", 932, 71, "9 AM - 6 PM", 3400)
-zoo.feed_animal()
+
 
