@@ -1,4 +1,4 @@
-from AbstractAnimalHome import AbstractAnimalHome
+from Models.AbstractAnimalHome import AbstractAnimalHome
 
 
 class Cover(AbstractAnimalHome):
@@ -16,6 +16,7 @@ class Cover(AbstractAnimalHome):
         self.schedule = schedule
         self.support_by_money = support_by_money
         self.description()
+        self.favorite_food_set = {"Feed for dogs and cats"}
 
     # реалізація методу
     def description(self):
@@ -28,3 +29,4 @@ class Cover(AbstractAnimalHome):
     # реалізація методу для рахування витрат для
     def calculate_cost_per_month(self):
         print("Money for support cover " + str(self.support_by_money * 30))
+

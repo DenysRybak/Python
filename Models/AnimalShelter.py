@@ -1,4 +1,4 @@
-from AbstractAnimalHome import AbstractAnimalHome
+from Models.AbstractAnimalHome import AbstractAnimalHome
 
 
 class AnimalShelter(AbstractAnimalHome):
@@ -13,6 +13,7 @@ class AnimalShelter(AbstractAnimalHome):
     # ініціалізовуємо атрибути обєктів
     def __init__(self, name, location, area, number_animals,money_for_repair):
         super().__init__(name, location, area)
+        self.favorite_food_set = {"pork"}
         self.number_animals = number_animals
         self.money_for_repair = money_for_repair
         self.description()
@@ -30,3 +31,5 @@ class AnimalShelter(AbstractAnimalHome):
     # реалізація методу для рахування витрат
     def calculate_cost_per_month(self):
         print("Money for by food for AnimalShelter : " + str(self.money_for_repair))
+
+

@@ -1,4 +1,4 @@
-from AbstractAnimalHome import AbstractAnimalHome
+from Models.AbstractAnimalHome import AbstractAnimalHome
 
 
 class Zoo(AbstractAnimalHome):
@@ -17,6 +17,7 @@ class Zoo(AbstractAnimalHome):
         self.time_work = time_work
         self.money_for_zoo = money_for_zoo
         self.description()
+        self.favorite_food_set = {"Meat"}
 
     # реалізація методу
     def description(self):
