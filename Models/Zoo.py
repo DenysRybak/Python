@@ -32,3 +32,6 @@ class Zoo(AbstractAnimalHome):
     def calculate_cost_per_month(self):
         print("Money for support zoo: " + str(self.money_for_zoo * 30))
 
+    def feed_animal(self):
+        pass
+
